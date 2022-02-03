@@ -21,6 +21,11 @@
   --hero-btn-shadow-color: rgba(0, 0, 0, 0.15);
   --peculiarities-text-color: #757575;
   --team-background-color: #f5f4fa;
+  --team-description-background-color: #ffffff;
+  --team-link-background-color: #ffffff;
+  --team-icon-color: #afb1b8;
+  --team-link-accent-background-color: #2196f3;
+  --team-icon-accent-color: #ffffff;
   --portfolio-btn-background-color: #f5f4fa;
   --portfolio-btn-accent-background-color: #2196f3;
   --portfolio-btn-accent-color: #ffffff;
@@ -137,7 +142,7 @@ body {
 }
 
 .header-contacts-item:not(:last-child) {
-  margin-right: 51px;
+  margin-right: 30px;
 }
 
 .header-contacts-link {
@@ -334,6 +339,7 @@ body {
 .team-item-description {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--team-description-background-color);
 }
 
 .team-item-title {
@@ -352,6 +358,40 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--team-item-text-color);
+  margin-bottom: 16px;
+}
+
+.team-socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-socials-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--team-link-background-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-socials-icon {
+  fill: var(--team-icon-color);
+}
+
+.team-socials-link:hover,
+.team-socials-link:focus {
+  background-color: var(--team-link-accent-background-color);
+}
+
+.team-socials-link:hover .team-socials-icon,
+.team-socials-link:focus .team-socials-icon {
+  fill: var(--team-icon-accent-color);
 }
 
 /* ---------------------PORTFOLIO------------------- */
